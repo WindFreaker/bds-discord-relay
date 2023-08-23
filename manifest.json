@@ -3,7 +3,7 @@
     "header": {
         "name": "BDS Discord Relay",
         "description": "An addon for dedicated servers that relays in-game chat messages to Discord via webhooks.",
-        "uuid": "14e467b4-e3aa-49d3-8352-f8439fd7b2ee",
+        "uuid": "43163f81-c2a3-4b34-b6b0-2e709e1a6279",
         "version": [
             1,
             0,
@@ -20,7 +20,7 @@
             "description": "Script resources",
             "language": "javascript",
             "type": "script",
-            "uuid": "7c7e693f-99f4-41a9-95e0-1f57b37e1e12",
+            "uuid": "a12c3fc4-68dd-40c5-b57e-89429a7163d0",
             "version": [
                 1,
                 0,

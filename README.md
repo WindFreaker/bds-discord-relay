@@ -19,7 +19,7 @@ Next you will need to add this behavior pack to your server.
  ```JSON
  [
 	{
-		"pack_id" : "14e467b4-e3aa-49d3-8352-f8439fd7b2ee",  // will not change
+		"pack_id" : "43163f81-c2a3-4b34-b6b0-2e709e1a6279",  // will not change
 		"version" : [ 1, 0, 0 ]  // subject to change as the pack updates
 	}
 ]
