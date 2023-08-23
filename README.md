@@ -16,25 +16,25 @@ Next you will need to add this behavior pack to your server.
  2. Create a new subfolder inside your world folder called `behavior_packs` (should sit alongside the `db` folder and `level.dat`). It might already exist.
  3. Upload `bds-discord-relay.zip` into the new `behavior_packs` folder and extract it.
  4. Now go back one folder until you see the `db` folder, the `behavior_parks` folder, and the `level.dat` file once again. You need to upload a file called `world_behavior_packs.json` (or modify and merge the existing and provided files if one already exists). The resulting file should contain the following:
- ```JSON
- [
+```JSON
+[
 	{
 		"pack_id" : "43163f81-c2a3-4b34-b6b0-2e709e1a6279",  // will not change
 		"version" : [ 1, 0, 0 ]  // subject to change as the pack updates
 	}
 ]
+```
 
- ```
- 4. Go all the way back to the root directory of your server files. You should see a folder called `config`. Copy `7c7e693f-99f4-41a9-95e0-1f57b37e1e12.zip` into the `config` folder and extract it.
- 5. Enter the new `7c7e693f-99f4-41a9-95e0-1f57b37e1e12` folder and modify the `variables.json` file. Here you will need to paste the webhook's ID and token that you got when creating the Discord webhook in the beginning. If done properly the file will look something like this:
- ```JSON
- {
-    "discord-webhook-id": "1234567890",               // won't look exactly like this
-    "discord-webhook-token": "abra_kadabra_alakazam"  // your ID and token will be different
+ 4. Go all the way back to the root directory of your server files. You should see a folder called `config`. Copy `a12c3fc4-68dd-40c5-b57e-89429a7163d0.zip` into the `config` folder and extract it.
+ 5. Enter the new `a12c3fc4-68dd-40c5-b57e-89429a7163d0` folder and modify the `variables.json` file. Here you will need to paste the webhook's ID and token that you got when creating the Discord webhook in the beginning. If done properly the file will look something like this:
+```JSON
+{
+	"discord-webhook-id": "1234567890",               // won't look exactly like this
+	"discord-webhook-token": "abra_kadabra_alakazam"  // your ID and token will be different
 }
- ```
+```
 
- Congratulations, you've added the behavior pack and provided it the necessary permissions to operate. Now comes the complicated part. Currently Mojang provides no way for the bedrock dedicated server software to enable experiments, which currently is an issue as this pack requires experimental APIs. To accomplish this, I've found it easiest to modify the world using the PC verison of the game, but I suppose it could be possible with the mobile version as well.
+Congratulations, you've added the behavior pack and provided it the necessary permissions to operate. Now comes the complicated part. Currently Mojang provides no way for the bedrock dedicated server software to enable experiments, which currently is an issue as this pack requires experimental APIs. To accomplish this, I've found it easiest to modify the world using the PC verison of the game, but I suppose it could be possible with the mobile version as well.
 
  1. Copy the world from your server to your `minecraftWorlds` folder. This folder can usually be found at `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`.
  2. Launch the game, locate the world you just uploaded, and click on the pencil (edit) icon.
